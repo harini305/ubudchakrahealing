@@ -1,0 +1,326 @@
+{
+  "_about": "Verbatim text captured 2026-10-17 from https://www.ubudchakrahealing.com/ (desktop render). Original spelling/grammar preserved deliberately; see 08-issues-gaps-questions.md before publishing. \"dup_of\" marks repeated text.",
+  "business": {
+    "name": "Ubud Chakra Healing",
+    "tagline_in_logo": "HEAL FROM WITHIN",
+    "site_description_wp": "Chakra Healing in Ubud, Bali",
+    "practitioner": "Mr. Ketut",
+    "teacher": "a Japanese person named Kayo (About page)",
+    "phone_display": "+62 81353040211",
+    "phone_href": "tel:+6281353040211",
+    "email": "info@ubudchakrahealing.com",
+    "address_display": "Ubud Monkey Forest",
+    "location_text": "The Healing is taken place in Puspa Body Treatment located at Monkey Forest street just across from the football field.",
+    "map": {
+      "about_center": [
+        -8.512417,
+        115.260977
+      ],
+      "contact_center": [
+        -8.510074,
+        115.261218
+      ],
+      "geocode_query": "Nyuh Gading Restaurant and Accomodation"
+    },
+    "social_links": "NONE REAL - footer icons point to generic instagram.com / twitter.com / pinterest.com / facebook.com homepages",
+    "footer_credit": "©2022 Ubud Chakra Healing – Developed by Sadu Jayanatha (mailto:sadujayanatha@live.com)",
+    "prices": null,
+    "durations": null,
+    "opening_hours": null,
+    "testimonials": null,
+    "faqs": null,
+    "blog_posts": null
+  },
+  "navigation": [
+    "HOME",
+    "TREATMENTS",
+    "ABOUT US",
+    "MEANING OF CHAKRA",
+    "CONTACT US"
+  ],
+  "pages": {
+    "home": {
+      "source": "/",
+      "seo_title": "Healing & Relaxation - Ubud Chakra Healing, Bali",
+      "meta_description": "Clearing, energizing, activating & other spiritual healing methods for the mind & body. Heal your body and soul. Yoga Studio & Class Schedules, Ubud - Bali",
+      "hero_slides": [
+        {
+          "title": "The Healer",
+          "text": "Mr. Ketut has been learning and do the healing over than 20 years. He learned this technique from a Japanese person.",
+          "cta": "FIND MORE",
+          "href": "/about-us",
+          "image": "2019/10/ubud-chakra-healing-compressor.jpg"
+        },
+        {
+          "title": "Healing & Relaxation",
+          "text": "The Healer body is used as a vehicle for energy throughout to transmit energy via the hands to the client.",
+          "cta": "FIND MORE",
+          "href": "/about-us",
+          "image": "2019/10/ubud-chakra-healing-healer-compressor.jpg"
+        },
+        {
+          "title": "Wheels of Energy",
+          "text": "There are seven main chakras, which align the spine, starting from the base of the spine through to the crown of the head.",
+          "cta": "WHAT IS CHAKRA",
+          "href": "/chackra-meaning (404 - broken)",
+          "image": "2022/10/RES-13.jpg"
+        }
+      ],
+      "meaning_of_chakra": {
+        "heading": "The Meaning of Chakra",
+        "paragraphs": [
+          "The Sanskrit word Chakra literally translates to wheel or disk. In yoga, meditation, and Ayurveda, this term refers to wheels of energy throughout the body. There are seven main chakras, which align the spine, starting from the base of the spine through to the crown of the head.",
+          "Located along the central channel of the body from the base of the spine to the top of the head, they are conceived of as whirling, wheel-like vortices through which universal/cosmic energy flows into and out of a person.",
+          "Chakras are energy centers or portals in the energy field. They play an important role in the health of your energy systems, including your physical body. Located along the central channel of the body from the base of the spine to the top of the head, they are conceived of as whirling, wheel-like vortices through which universal/cosmic energy flows into and out of a person."
+        ],
+        "note": "paragraph 3 repeats paragraph 2",
+        "cta": "READ MORE...",
+        "href": "/what-is-chakra/"
+      },
+      "gallery": [
+        "2016/10/MI_07033UVR-.jpg",
+        "2016/10/MI_06993UVR-.jpg",
+        "2022/10/RES-13.jpg",
+        "2022/10/RES-20.jpg",
+        "2022/10/RES-21.jpg",
+        "2016/10/MI_07032UVR-.jpg"
+      ],
+      "accordion_section": {
+        "heading": "Ubud Chakra Healing",
+        "subheading": "Know more about Chakra Healing",
+        "items": [
+          {
+            "q": "WHAT IS CHAKRA HEALING",
+            "a": [
+              "When we talk about chakra healing, we may actually refer to various techniques and meanings. A commonly accepted definition of chakra balancing is the process through which the energy of the chakras is brought to a well functioning and harmonious state"
+            ]
+          },
+          {
+            "q": "WHY BALANCING YOUR CHAKRAS?",
+            "a": [
+              "The purpose of chakra healing is to support a balanced flow that will sustain our overall level of energy. In our everyday life, we are subjected to a number of activities, sources of stress and demands that result in fluctuations in our energy level. Some may feel draining, others fulfilling or nourishing. Furthermore, past events and experiences often leave a long lasting influence on how we feel and are in the world, therefore influencing how we manage our energy day-to-day.",
+              "Stresses placed on us by the demands of life may result in interruptions and fluctuations in our energy flow and chakra imbalances"
+            ]
+          }
+        ]
+      }
+    },
+    "treatments": {
+      "source": "/treatments/",
+      "h1": "Treatments",
+      "tagline": "Relaxation And Rejuvenation In The Island Of The Gods",
+      "cards": [
+        {
+          "title": "Chakra Balancing",
+          "excerpt": "The Sanskrit word Chakra literally translates to wheel or disk. In yoga, meditation, and Ayurveda, this term refers to wheels of energy throughout the body. There are seven main chakras, which align the spine, starting from the base of the spine through to the crown of the head.",
+          "href": "/treatment/chakra-balancing/",
+          "image": "2022/10/RES-13.jpg"
+        },
+        {
+          "title": "Palm Reading",
+          "excerpt": "Palm reading, also called palmistry, originated from ancient India, and is now popular and fashionable worldwide as a way of seeing a person’s fate and personality by reading palm lines, hand shapes and colors, etc.",
+          "href": "/treatment/palm-reading/",
+          "image": "2022/10/Palm-Reader.jpg"
+        },
+        {
+          "title": "Water Purification",
+          "excerpt": "Melukat is one of the sacred rituals in Bali, which uses water as a cleansing tool. The purpose of the Melukat is to cleanse the body, mind, spirit, and soul to eliminate bad spirits, negative effects and to bring good fortune. It is believed that Melukat cures non-medical and spiritual diseases.",
+          "href": "/treatment/water-purification/",
+          "image": "2019/02/Tirta-Sudamala-7-1024x682.jpg"
+        },
+        {
+          "title": "Balinese Massage",
+          "excerpt": "Science has stated that massage therapies are the best therapy for your mind and body. Massage not only relaxes your body and also de-stresses the mind by releasing serotonin in the body.",
+          "href": "/treatment/balinese-massage/",
+          "image": "2016/10/MI_07032UVR-.jpg"
+        }
+      ]
+    },
+    "treatment_chakra_balancing": {
+      "source": "/treatment/chakra-balancing/",
+      "title": "Chakra Balancing",
+      "body": [
+        "The Sanskrit word Chakra literally translates to wheel or disk. In yoga, meditation, and Ayurveda, this term refers to wheels of energy throughout the body. There are seven main chakras, which align the spine, starting from the base of the spine through to the crown of the head.",
+        "Located along the central channel of the body from the base of the spine to the top of the head, they are conceived of as whirling, wheel-like vortices through which universal/cosmic energy flows into and out of a person.",
+        "Chakras are energy centers or portals in the energy field. They play an important role in the health of your energy systems, including your physical body. Located along the central channel of the body from the base of the spine to the top of the head, they are conceived of as whirling, wheel-like vortices through which universal/cosmic energy flows into and out of a person.",
+        "Chakras can become blocked or imbalanced. With a chakra blockage, the free flow of energy in and out, plus the flow of energy to other chakras, is impeded. If the chakras are imbalanced, one or more chakras is over-active or underactive compared to the others.",
+        "Blockages and imbalances in a chakra can result in disturbances–sometimes profound–in a person’s health, emotions, mind, spirit, or life.",
+        "Chakras can become blocked or imbalanced. With a chakra blockage, the free flow of energy in and out, plus the flow of energy to other chakras, is impeded. If the chakras are imbalanced, one or more chakras is over-active or underactive compared to the others. Blockages and imbalances in a chakra can result in disturbances–sometimes profound–in a person’s health, emotions, mind, spirit, or life.",
+        "The purpose of chakra healing is to support a balanced flow that will sustain our overall level of energy. In our everyday life, we are subjected to a number of activities, sources of stress and demands that result in fluctuations in our energy level. Some may feel draining, others fulfilling or nourishing. Furthermore, past events and experiences often leave a long lasting influence on how we feel and are in the world, therefore influencing how we manage our energy day-to-day.",
+        "Stresses placed on us by the demands of life may result in interruptions and fluctuations in our energy flow and chakra imbalances"
+      ],
+      "note": "paragraphs 3 and 6 are repeats; text duplicated from /what-is-chakra/",
+      "images": [
+        "2017/08/ubud-chakra-healing-healer-1-compressor.jpg",
+        "2022/10/RES-20.jpg"
+      ],
+      "tags": [
+        "chakra",
+        "healing"
+      ],
+      "likes": 84
+    },
+    "treatment_palm_reading": {
+      "source": "/treatment/palm-reading/",
+      "title": "Palm Reading",
+      "body": [
+        "Palm reading, also called palmistry, originated from ancient India, and is now popular and fashionable worldwide as a way of seeing a person’s fate and personality by reading palm lines, hand shapes and colors, etc.",
+        "There are five main lines on the palm: the life line, heart line (also called love line), money line (also called the fate line), head line, and marriage line. Different lines correspond with different traits.",
+        "Life line: health and physical vitality",
+        "Heart line: love and emotion",
+        "Money line: career and fortune",
+        "Head line: intelligence and mentality",
+        "Marriage line: married life and relationships"
+      ],
+      "images": [
+        "2022/10/Palm-Reader.jpg"
+      ],
+      "likes": 63
+    },
+    "treatment_water_purification": {
+      "source": "/treatment/water-purification/",
+      "title": "Water Purification",
+      "alt_title_on_yoga_treatment": "MELUKAT – WATER PURIFICATION",
+      "body": [
+        "Melukat is one of the sacred rituals in Bali, which uses water as a cleansing tool. The purpose of the Melukat is to cleanse the body, mind, spirit, and soul to eliminate bad spirits, negative effects and to bring good fortune. It is believed that Melukat cures non-medical and spiritual diseases.",
+        "The package is included with transfer from Ubud’s hotel, offering and guide to do the purification."
+      ],
+      "images": [
+        "2019/02/Tirta-Sudamala-7-1024x682.jpg"
+      ],
+      "likes": 25
+    },
+    "treatment_balinese_massage": {
+      "source": "/treatment/balinese-massage/",
+      "title": "Balinese Massage",
+      "body": [
+        "Science has stated that massage therapies are the best therapy for your mind and body. Massage not only relaxes your body and also de-stresses the mind by releasing serotonin in the body.",
+        "Here are the benefit of the Balinese Massage",
+        "Relieves muscle pain: This massage type helps to muscles to stretch and this keeps away all the pain from the body inclusive of the joints. In true sense, the joints will be highly liberated.",
+        "Treats any kind of sleep issues: Balinese massage possesses the capability of boosting your sleep pattern. This involves proper circulation of blood in the body thereby helping the brain to function properly and rectify sleep issues.",
+        "Boosts blood circulation: One major health benefit hitched to Balinese massage is boosting the circulation of blood. This happens when the therapist adheres to upward pressure point strokes.",
+        "Promotes skin health: Being a part of your body, you need to pay equal attention on the health of your skin too. Use of essential oils in Balinese massages acts as a supportive agent for the health of your skin, especially to keep away dryness.",
+        "Helps to keep away stress: All types of massage possess the ability to serve as stress buster and Balinese massage too doesn’t fail to live up to this. This is all because of the massage’s ability to boost blood circulation.",
+        "Serve as an energizer: This massage type can also boost your energy quotient by keeping stress away from your body. The body relaxes and feels free to carry out other activities.",
+        "Boost the immunity level: The immune system can be boosted by this massage type. This is all due to the oil and the pressure point application made in Balinese massage which acts well against any kind of diseases."
+      ],
+      "images": [
+        "2016/10/MI_07033UVR-.jpg",
+        "2016/10/MI_07032UVR-.jpg"
+      ],
+      "tags": [
+        "massage"
+      ],
+      "likes": 15
+    },
+    "about": {
+      "source": "/about-us/",
+      "h1": "About Us",
+      "intro": [
+        "Ubud Chakra Healing was built in 2022 by Mr. Ketut in Ubud, Monkey Forest Street.",
+        "The mission of the place is to give a new experience for others, relaxing and happy experience after the healing session. This place is focusing on Chakra balancing, a session to check and analyze the chakra within your body.",
+        "The place is a simple one and located in a strategic place in the centre of Ubud. It is an easy access for those who would like to experience the sensation of transferring the good energy throughout the body.",
+        "Mr. Ketut has learned the Chakra Balancing from a Japanese person named Kayo.",
+        "He has learned for it about more than 15 years. He was a civil servant before and has retired about 5 years. In this time he focuses himself to serve others. Giving a positive energy and spread love to others."
+      ],
+      "healing_process": {
+        "heading": "HEALING PROCESS",
+        "text": "The Healer body is used as a vehicle for energy throughout to transmit energy via the hands to the client, which promote healing and relaxation to the whole body, leaving the calm and well being on all level, physical, mental, emotional and spiritual",
+        "cta": "HEALING METHOD (href # - dead)",
+        "image": "2017/08/ubud-chakra-healing-process-compressor.jpg"
+      },
+      "the_healer": {
+        "heading": "THE HEALER",
+        "text": "Mr. Ketut has been learning and do the healing over than 20 years. He learned this technique from a Japanese person. Then he decided to do the healing in 1997 until now. During his retirement as a civil servant before, the time to heal the people is more than before.",
+        "cta": "CONTACT US (href # - dead)",
+        "image": "2017/08/ubud-chakra-healing-healer-1-compressor.jpg"
+      },
+      "location": {
+        "heading": "LOCATION",
+        "text": "The Healing is taken place in Puspa Body Treatment located at Monkey Forest street just across from the football field.",
+        "cta": "CONTACT US -> /contact-us",
+        "embed": "Google Map"
+      }
+    },
+    "meaning_of_chakra": {
+      "source": "/what-is-chakra/",
+      "h1": "Meaning Of Chakra",
+      "h2": "The Meaning of Chakra",
+      "paragraphs": [
+        "The Sanskrit word Chakra literally translates to wheel or disk. In yoga, meditation, and Ayurveda, this term refers to wheels of energy throughout the body. There are seven main chakras, which align the spine, starting from the base of the spine through to the crown of the head.",
+        "Located along the central channel of the body from the base of the spine to the top of the head, they are conceived of as whirling, wheel-like vortices through which universal/cosmic energy flows into and out of a person.",
+        "Chakras are energy centers or portals in the energy field. They play an important role in the health of your energy systems, including your physical body. Located along the central channel of the body from the base of the spine to the top of the head, they are conceived of as whirling, wheel-like vortices through which universal/cosmic energy flows into and out of a person.",
+        "Chakras can become blocked or imbalanced. With a chakra blockage, the free flow of energy in and out, plus the flow of energy to other chakras, is impeded. If the chakras are imbalanced, one or more chakras is over-active or underactive compared to the others.",
+        "Blockages and imbalances in a chakra can result in disturbances–sometimes profound–in a person’s health, emotions, mind, spirit, or life.",
+        "Chakras can become blocked or imbalanced. With a chakra blockage, the free flow of energy in and out, plus the flow of energy to other chakras, is impeded. If the chakras are imbalanced, one or more chakras is over-active or underactive compared to the others. Blockages and imbalances in a chakra can result in disturbances–sometimes profound–in a person’s health, emotions, mind, spirit, or life."
+      ],
+      "note": "p3 repeats p2; p6 repeats p4+p5",
+      "accordion": "same as home.accordion_section"
+    },
+    "contact": {
+      "source": "/contact-us/",
+      "h2": "Contact Us",
+      "subheading": "Please fill form below",
+      "form_fields": [
+        {
+          "label": "Your Name (required)",
+          "name": "your-name",
+          "type": "text",
+          "required": true,
+          "name_verified_in_html": true
+        },
+        {
+          "label": "Your Email (required)",
+          "name": "your-email",
+          "type": "email",
+          "required": true,
+          "name_verified_in_html": true
+        },
+        {
+          "label": "Contact phone (required)",
+          "name": "your-number",
+          "type": "tel",
+          "required": true,
+          "default": "+62",
+          "name_verified_in_html": true
+        },
+        {
+          "label": "Subject",
+          "name": "your-subject",
+          "type": "text",
+          "required": false,
+          "name_verified_in_html": true
+        },
+        {
+          "label": "Your Message",
+          "name": "your-message",
+          "type": "textarea",
+          "required": false,
+          "name_verified_in_html": true
+        }
+      ],
+      "submit": "SEND",
+      "validation_messages": [
+        "The field is required.",
+        "One or more fields have an error. Please check and try again."
+      ]
+    },
+    "yoga_treatment_orphan": {
+      "source": "/yoga-treatment/",
+      "h1": "Treatment",
+      "sections": [
+        "CHAKRA HEALING",
+        "PALM READING",
+        "MELUKAT – WATER PURIFICATION",
+        "BALINESE MASSAGE"
+      ],
+      "unique_text_not_on_detail_pages": null,
+      "note": "Content duplicates the four detail pages."
+    },
+    "not_found": {
+      "title": "404 Error Page",
+      "text": "The page you are looking for does not exist. It may have been moved, or removed altogether. Perhaps you can return back to the site's homepage and see if you can find what you are looking for.",
+      "cta": "BACK TO HOME"
+    }
+  }
+}

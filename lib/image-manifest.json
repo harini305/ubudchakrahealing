@@ -1,0 +1,142 @@
+{
+  "healer-at-work": {
+    "width": 1920,
+    "height": 1080,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1920
+    ]
+  },
+  "still-life": {
+    "width": 1920,
+    "height": 1080,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1920
+    ]
+  },
+  "healer-portrait": {
+    "width": 1076,
+    "height": 1614,
+    "widths": [
+      480,
+      800,
+      1076
+    ]
+  },
+  "hands-crown": {
+    "width": 2000,
+    "height": 3000,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2000
+    ]
+  },
+  "hands-temple": {
+    "width": 2000,
+    "height": 3000,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2000
+    ]
+  },
+  "hands-head": {
+    "width": 2000,
+    "height": 3000,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2000
+    ]
+  },
+  "hands-holding": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "massage-arm": {
+    "width": 1600,
+    "height": 2400,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ]
+  },
+  "hands-forehead-wide": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ]
+  },
+  "hands-forehead-tall": {
+    "width": 1600,
+    "height": 2400,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ]
+  },
+  "healing-process": {
+    "width": 800,
+    "height": 488,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "healer-treating": {
+    "width": 800,
+    "height": 488,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "palm-reading": {
+    "width": 1200,
+    "height": 1600,
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  "melukat": {
+    "width": 1024,
+    "height": 682,
+    "widths": [
+      480,
+      800,
+      1024
+    ]
+  }
+}
