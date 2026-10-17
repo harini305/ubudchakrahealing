@@ -14,41 +14,38 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <div className="container page-head">
-        <h1>About Ubud Chakra Healing</h1>
-        <p>
-          Mr. Ketut’s practice on Monkey Forest Street, Ubud. It focuses on chakra balancing: a session to check and
-          analyse the chakras within your body.
-        </p>
-      </div>
+      <div className="container page-grid" style={{ paddingBottom: 'var(--space-xl)' }}>
+        <header className="page-grid__head">
+          <h1>About Ubud Chakra Healing</h1>
+          <p>
+            Mr. Ketut’s practice on Monkey Forest Street, Ubud. It focuses on chakra balancing: a session to check and
+            analyse the chakras within your body.
+          </p>
 
-      <section className="section" aria-labelledby="healer-heading">
-        <div className="container split split--portrait">
-          <Picture
-            name="healer-portrait"
-            alt="Mr. Ketut stands with eyes closed and hands raised in front of a mandala painting"
-            sizes="(min-width: 900px) 35vw, 100vw"
-            className="split__media split__media--portrait"
-            priority
-          />
-          <div className="prose">
-            <h2 id="healer-heading">The healer</h2>
-            <p>
-              Mr. Ketut learned chakra balancing from a Japanese teacher named Kayo. He was a civil servant before he
-              retired, and now focuses on serving others: giving positive energy and spreading love.
-            </p>
-            <p>
-              The mission of the place is to give others a new experience, and a relaxing and happy one after the healing
-              session.
-            </p>
-            <div className="actions">
-              <Link href="/contact-us" className="text-link">
-                Contact Mr. Ketut
-              </Link>
-            </div>
+          <h2 id="healer-heading">The healer</h2>
+          <p>
+            Mr. Ketut learned chakra balancing from a Japanese teacher named Kayo. He was a civil servant before he
+            retired, and now focuses on serving others: giving positive energy and spreading love.
+          </p>
+          <p>
+            The mission of the place is to give others a new experience, and a relaxing and happy one after the healing
+            session.
+          </p>
+          <div className="actions">
+            <Link href="/contact-us" className="button">
+              Contact Mr. Ketut
+            </Link>
           </div>
-        </div>
-      </section>
+        </header>
+
+        <Picture
+          name="healer-portrait"
+          alt="Mr. Ketut stands with eyes closed and hands raised in front of a mandala painting"
+          sizes="(min-width: 900px) 40vw, 100vw"
+          className="page-grid__aside portrait"
+          priority
+        />
+      </div>
 
       <section className="section section--wash">
         <div className="container duo">

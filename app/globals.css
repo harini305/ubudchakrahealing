@@ -1190,3 +1190,105 @@ a:hover {
 .duo .map {
   margin-top: 0;
 }
+
+/* ---------- Two-column page (About, Meaning of chakra) ----------
+   Heading and text on the left, a visual on the right from the first line,
+   so neither column leaves an empty band. */
+
+.page-grid {
+  display: grid;
+  grid-template-areas: 'head' 'aside' 'body';
+  gap: var(--space-l);
+  padding-block: var(--space-xl) var(--space-2xl);
+}
+
+.page-grid__head { grid-area: head; }
+.page-grid__aside { grid-area: aside; }
+.page-grid__body { grid-area: body; }
+
+.page-grid__head p {
+  margin-top: var(--space-s);
+  font-size: var(--step-1);
+  color: var(--ink-muted);
+}
+
+.page-grid__body > h2,
+.page-grid__head > h2 {
+  margin: var(--space-l) 0 var(--space-xs);
+  font-size: var(--step-2);
+}
+
+.page-grid__body > h2:first-child {
+  margin-top: 0;
+}
+
+.page-grid__head > h2 + p,
+.page-grid__head > h2 ~ p {
+  font-size: var(--step-0);
+  color: var(--ink);
+}
+
+@media (min-width: 900px) {
+  .page-grid {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      'head aside'
+      'body aside';
+    column-gap: var(--space-xl);
+    row-gap: var(--space-l);
+    align-items: start;
+  }
+}
+
+@media (min-width: 900px) and (min-height: 760px) {
+  .page-grid__aside--sticky {
+    position: sticky;
+    top: calc(var(--header-h) + var(--space-m));
+  }
+}
+
+.page-grid__aside img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.portrait img {
+  aspect-ratio: 4 / 5;
+}
+
+/* Meaning page aside: photo above the chakra spine in one panel. */
+.chakra-card {
+  background: var(--teak-wash);
+}
+
+.chakra-card img {
+  aspect-ratio: 16 / 9;
+}
+
+.chakra-card__body {
+  padding: var(--space-m) var(--space-l) var(--space-l);
+}
+
+.chakra-card__body h2 {
+  margin-bottom: var(--space-m);
+  font-size: var(--step-1);
+}
+
+.chakra-card .spine__dot {
+  box-shadow: 0 0 0 4px var(--teak-wash);
+}
+
+.chakra-card .spine {
+  --spine-gap: clamp(0.75rem, 0.5rem + 0.8vw, 1.1rem);
+}
+
+.page-grid__body .faq {
+  margin-top: var(--space-s);
+}
+
+@media (max-width: 899px) {
+  .chakra-card picture {
+    display: none;
+  }
+}

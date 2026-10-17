@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import ChakraSpine from '@/components/ChakraSpine';
 import ContactBand from '@/components/ContactBand';
+import Picture from '@/components/Picture';
 import { chakraFaq } from '@/lib/content';
 
 export const metadata = {
@@ -14,57 +15,53 @@ export const metadata = {
 export default function MeaningPage() {
   return (
     <>
-      <div className="container page-head">
-        <h1>The meaning of chakra</h1>
-        <p>
-          The Sanskrit word chakra literally translates to wheel or disk. In yoga, meditation and Ayurveda, it refers to
-          wheels of energy throughout the body.
-        </p>
-      </div>
+      <div className="container page-grid">
+        <header className="page-grid__head">
+          <h1>The meaning of chakra</h1>
+          <p>
+            The Sanskrit word chakra literally translates to wheel or disk. In yoga, meditation and Ayurveda, it refers
+            to wheels of energy throughout the body.
+          </p>
+        </header>
 
-      <section className="section" aria-labelledby="seven-heading">
-        <div className="container chakra-intro">
-          <div className="prose">
-            <h2 id="seven-heading" style={{ marginTop: 0 }}>
-              Seven main chakras
-            </h2>
-            <p>
-              There are seven main chakras, which align the spine, starting from the base of the spine through to the
-              crown of the head.
-            </p>
-            <p>
-              Chakras are energy centres or portals in the energy field. They play an important role in the health of
-              your energy systems, including your physical body. Located along the central channel of the body, they are
-              conceived of as whirling, wheel-like vortices through which universal or cosmic energy flows into and out of
-              a person.
-            </p>
-            <h2>Blockages and imbalances</h2>
-            <p>
-              Chakras can become blocked or imbalanced. With a chakra blockage, the free flow of energy in and out, and
-              the flow of energy to other chakras, is impeded. If the chakras are imbalanced, one or more chakras is
-              over-active or under-active compared to the others.
-            </p>
-            <p>
-              Blockages and imbalances in a chakra can result in disturbances, sometimes profound, in a person’s health,
-              emotions, mind, spirit or life.
-            </p>
+        <aside className="page-grid__aside page-grid__aside--sticky chakra-card" aria-labelledby="spine-heading">
+          <Picture
+            name="hands-crown"
+            alt="Mr. Ketut’s hands resting lightly on the crown of a client’s head"
+            sizes="(min-width: 900px) 40vw, 100vw"
+            priority
+          />
+          <div className="chakra-card__body">
+            <h2 id="spine-heading">From root to crown</h2>
+            <ChakraSpine label="The seven main chakras, from the base of the spine to the crown" />
           </div>
-          <aside className="spine-panel" aria-label="The seven main chakras">
-            <ChakraSpine />
-          </aside>
-        </div>
-      </section>
+        </aside>
 
-      <section className="section" style={{ paddingTop: 0 }} aria-labelledby="faq-heading">
-        <div className="container faq-layout">
-          <div>
-            <h2 id="faq-heading">Chakra healing</h2>
-            <div className="actions">
-              <Link href="/treatment/chakra-balancing" className="text-link">
-                About a chakra balancing session
-              </Link>
-            </div>
-          </div>
+        <div className="page-grid__body prose" style={{ maxWidth: 'none' }}>
+          <h2>Seven main chakras</h2>
+          <p>
+            There are seven main chakras, which align the spine, starting from the base of the spine through to the crown
+            of the head.
+          </p>
+          <p>
+            Chakras are energy centres or portals in the energy field. They play an important role in the health of your
+            energy systems, including your physical body. Located along the central channel of the body, they are
+            conceived of as whirling, wheel-like vortices through which universal or cosmic energy flows into and out of
+            a person.
+          </p>
+
+          <h2>Blockages and imbalances</h2>
+          <p>
+            Chakras can become blocked or imbalanced. With a chakra blockage, the free flow of energy in and out, and the
+            flow of energy to other chakras, is impeded. If the chakras are imbalanced, one or more chakras is
+            over-active or under-active compared to the others.
+          </p>
+          <p>
+            Blockages and imbalances in a chakra can result in disturbances, sometimes profound, in a person’s health,
+            emotions, mind, spirit or life.
+          </p>
+
+          <h2>Chakra healing</h2>
           <div className="faq">
             {chakraFaq.map((item, i) => (
               <details key={item.q} open={i === 0}>
@@ -77,8 +74,13 @@ export default function MeaningPage() {
               </details>
             ))}
           </div>
+          <div className="actions">
+            <Link href="/treatment/chakra-balancing" className="text-link">
+              About a chakra balancing session
+            </Link>
+          </div>
         </div>
-      </section>
+      </div>
 
       <ContactBand />
     </>
