@@ -33,9 +33,9 @@ export default async function TreatmentPage({ params }) {
 
   return (
     <>
-      <div className="container page-head page-head--with-image">
-        <div>
-          <nav aria-label="Breadcrumb" style={{ marginBottom: 'var(--space-s)', fontSize: 'var(--step--1)' }}>
+      <article className="container detail">
+        <div className="detail__head">
+          <nav aria-label="Breadcrumb">
             <Link href="/treatments">All treatments</Link>
           </nav>
           <h1>{t.title}</h1>
@@ -50,34 +50,32 @@ export default async function TreatmentPage({ params }) {
             </dl>
           )}
         </div>
+
         <Picture
           name={t.image}
           alt={t.imageAlt}
-          sizes="(min-width: 900px) 45vw, 100vw"
-          className="page-head__image"
+          sizes="(min-width: 900px) 42vw, 100vw"
+          className="detail__media"
           priority
         />
-      </div>
 
-      <section className="section" style={{ paddingTop: 'var(--space-l)' }}>
-        <div className="container">
-          <div className="prose">
-            <Body />
-            <div className="actions">
-              <Link href="/contact-us" className="button">
-                Ask about {t.title.replace(/ \(.*\)$/, '').toLowerCase()}
-              </Link>
-            </div>
+        <div className="detail__body prose">
+          <Body />
+          <div className="actions">
+            <Link href="/contact-us" className="button">
+              Ask about {t.title.replace(/ \(.*\)$/, '').toLowerCase()}
+            </Link>
           </div>
-          {gallery.length > 0 && (
-            <div className="detail-gallery">
-              {gallery.map((g) => (
-                <Picture key={g.name} name={g.name} alt={g.alt} sizes="(min-width: 700px) 50vw, 100vw" />
-              ))}
-            </div>
-          )}
         </div>
-      </section>
+
+        {gallery.length > 0 && (
+          <div className="detail__gallery">
+            {gallery.map((g) => (
+              <Picture key={g.name} name={g.name} alt={g.alt} sizes="(min-width: 900px) 42vw, 100vw" />
+            ))}
+          </div>
+        )}
+      </article>
 
       <ContactBand />
     </>

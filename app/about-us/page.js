@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Picture from '@/components/Picture';
 import MapEmbed from '@/components/MapEmbed';
+import { mapLinks } from '@/lib/content';
 
 export const metadata = {
   title: 'About Mr. Ketut',
@@ -21,12 +22,12 @@ export default function AboutPage() {
         </p>
       </div>
 
-      <section className="section" style={{ paddingTop: 'var(--space-l)' }} aria-labelledby="healer-heading">
-        <div className="container split">
+      <section className="section" aria-labelledby="healer-heading">
+        <div className="container split split--portrait">
           <Picture
             name="healer-portrait"
             alt="Mr. Ketut stands with eyes closed and hands raised in front of a mandala painting"
-            sizes="(min-width: 900px) 40vw, 100vw"
+            sizes="(min-width: 900px) 35vw, 100vw"
             className="split__media split__media--portrait"
             priority
           />
@@ -49,15 +50,15 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section section--wash" aria-labelledby="process-heading">
-        <div className="container split split--reverse">
-          <Picture
-            name="healing-process"
-            alt="The healer’s hands resting over a client’s eyes and forehead"
-            sizes="(min-width: 900px) 45vw, 100vw"
-            className="split__media split__media--landscape"
-          />
-          <div className="prose">
+      <section className="section section--wash">
+        <div className="container duo">
+          <div aria-labelledby="process-heading" role="region">
+            <Picture
+              name="healing-process"
+              alt="The healer’s hands resting over a client’s eyes and forehead"
+              sizes="(min-width: 900px) 45vw, 100vw"
+              className="duo__media"
+            />
             <h2 id="process-heading">The healing process</h2>
             <p>
               The healer’s body is used as a vehicle for energy, transmitted through the hands to the client. This
@@ -70,12 +71,9 @@ export default function AboutPage() {
               </Link>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section className="section" aria-labelledby="location-heading">
-        <div className="container split">
-          <div className="prose">
+          <div aria-labelledby="location-heading" role="region">
+            <MapEmbed className="map duo__media" link={false} />
             <h2 id="location-heading">Location</h2>
             <p>
               The place is a simple one, easy to reach on Monkey Forest Street in the centre of Ubud, across from the
@@ -85,9 +83,11 @@ export default function AboutPage() {
               <Link href="/contact-us" className="button">
                 Contact and directions
               </Link>
+              <a href={mapLinks.open} target="_blank" rel="noopener noreferrer" className="text-link">
+                Open in Google Maps
+              </a>
             </div>
           </div>
-          <MapEmbed />
         </div>
       </section>
     </>

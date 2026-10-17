@@ -17,7 +17,7 @@ export default function ContactPage() {
         <p>Call, email or send a message below to ask about a session.</p>
       </div>
 
-      <section className="section" style={{ paddingTop: 'var(--space-l)' }}>
+      <section className="section">
         <div className="container contact-layout">
           <div>
             <dl className="contact-list">
@@ -43,9 +43,7 @@ export default function ContactPage() {
                 </dd>
               </div>
             </dl>
-            <div className="map">
-              <MapEmbed className="" />
-            </div>
+            <MapEmbed />
           </div>
 
           <div>

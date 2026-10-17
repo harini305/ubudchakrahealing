@@ -22,7 +22,7 @@ export default function MeaningPage() {
         </p>
       </div>
 
-      <section className="section" style={{ paddingTop: 'var(--space-l)' }} aria-labelledby="seven-heading">
+      <section className="section" aria-labelledby="seven-heading">
         <div className="container chakra-intro">
           <div className="prose">
             <h2 id="seven-heading" style={{ marginTop: 0 }}>
@@ -49,13 +49,22 @@ export default function MeaningPage() {
               emotions, mind, spirit or life.
             </p>
           </div>
-          <ChakraSpine />
+          <aside className="spine-panel" aria-label="The seven main chakras">
+            <ChakraSpine />
+          </aside>
         </div>
       </section>
 
-      <section className="section section--wash" aria-labelledby="faq-heading">
-        <div className="container">
-          <h2 id="faq-heading">Chakra healing</h2>
+      <section className="section" style={{ paddingTop: 0 }} aria-labelledby="faq-heading">
+        <div className="container faq-layout">
+          <div>
+            <h2 id="faq-heading">Chakra healing</h2>
+            <div className="actions">
+              <Link href="/treatment/chakra-balancing" className="text-link">
+                About a chakra balancing session
+              </Link>
+            </div>
+          </div>
           <div className="faq">
             {chakraFaq.map((item, i) => (
               <details key={item.q} open={i === 0}>
@@ -67,11 +76,6 @@ export default function MeaningPage() {
                 </div>
               </details>
             ))}
-          </div>
-          <div className="actions">
-            <Link href="/treatment/chakra-balancing" className="text-link">
-              About a chakra balancing session
-            </Link>
           </div>
         </div>
       </section>
