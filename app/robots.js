@@ -1,4 +1,4 @@
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.ubudchakrahealing.com';
+import { SITE_URL as BASE } from '@/lib/site-url';
 
 export default function robots() {
   return {

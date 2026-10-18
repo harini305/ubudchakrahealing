@@ -1,12 +1,13 @@
 import MapEmbed from '@/components/MapEmbed';
 import { site } from '@/lib/content';
 import ContactForm from './ContactForm';
+import { ogImage } from '@/components/Picture';
 
 export const metadata = {
   title: 'Contact',
   description: `Contact Mr. Ketut at Ubud Chakra Healing, Monkey Forest Street, Ubud. Phone ${site.phone.display} or email ${site.email}.`,
   alternates: { canonical: '/contact-us' },
-  openGraph: { images: ['/images/hands-holding-1200.jpg'] },
+  openGraph: { images: [ogImage('hands-holding')] },
 };
 
 export default function ContactPage() {

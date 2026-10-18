@@ -2,6 +2,7 @@ import { Arimo, Raleway } from 'next/font/google';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import { site } from '@/lib/content';
+import { SITE_URL } from '@/lib/site-url';
 import './globals.css';
 
 // The only two font families on the site (09 §6). Arimo (metric-compatible
@@ -22,7 +23,7 @@ const raleway = Raleway({
 });
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.ubudchakrahealing.com'),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: `${site.name} | Chakra healing in Ubud, Bali`,
     template: `%s | ${site.name}`,

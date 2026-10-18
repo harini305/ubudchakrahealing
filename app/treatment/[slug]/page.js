@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import Picture from '@/components/Picture';
+import Picture, { ogImage } from '@/components/Picture';
 import ContactBand from '@/components/ContactBand';
 import { getTreatment, treatments } from '@/lib/content';
 import { treatmentBodies } from './bodies';
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
     title: t.title,
     description: t.description,
     alternates: { canonical: `/treatment/${t.slug}` },
-    openGraph: { images: [`/images/${t.image}-800.jpg`] },
+    openGraph: { images: [ogImage(t.image)] },
   };
 }
 

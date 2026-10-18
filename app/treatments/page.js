@@ -1,12 +1,13 @@
 import ContactBand from '@/components/ContactBand';
 import TreatmentGrid from '@/components/TreatmentGrid';
+import { ogImage } from '@/components/Picture';
 
 export const metadata = {
   title: 'Treatments',
   description:
     'Chakra balancing, palm reading, Melukat water purification and Balinese massage in Ubud, Bali.',
   alternates: { canonical: '/treatments' },
-  openGraph: { images: ['/images/hands-crown-1200.jpg'] },
+  openGraph: { images: [ogImage('hands-crown')] },
 };
 
 export default function TreatmentsPage() {

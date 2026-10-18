@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Picture from '@/components/Picture';
+import Picture, { ogImage } from '@/components/Picture';
 import MapEmbed from '@/components/MapEmbed';
 import { mapLinks } from '@/lib/content';
 
@@ -8,7 +8,7 @@ export const metadata = {
   description:
     'Ubud Chakra Healing is Mr. Ketut’s chakra balancing practice on Monkey Forest Street in the centre of Ubud, Bali.',
   alternates: { canonical: '/about-us' },
-  openGraph: { images: ['/images/healer-portrait-800.jpg'] },
+  openGraph: { images: [ogImage('healer-portrait')] },
 };
 
 export default function AboutPage() {

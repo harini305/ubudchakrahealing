@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import ChakraSpine from '@/components/ChakraSpine';
 import ContactBand from '@/components/ContactBand';
-import Picture from '@/components/Picture';
+import Picture, { ogImage } from '@/components/Picture';
 import { chakraFaq } from '@/lib/content';
 
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
   description:
     'Chakras are wheels of energy along the spine, from its base to the crown of the head. What they are, the seven main chakras, and why to balance them.',
   alternates: { canonical: '/what-is-chakra' },
-  openGraph: { images: ['/images/hands-crown-1200.jpg'] },
+  openGraph: { images: [ogImage('hands-crown')] },
 };
 
 export default function MeaningPage() {

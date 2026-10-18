@@ -1,6 +1,5 @@
 import { treatments } from '@/lib/content';
-
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.ubudchakrahealing.com';
+import { SITE_URL as BASE } from '@/lib/site-url';
 
 export default function sitemap() {
   const paths = ['/', '/treatments', '/about-us', '/what-is-chakra', '/contact-us', ...treatments.map((t) => `/treatment/${t.slug}`)];

@@ -1,0 +1,7 @@
+# Not part of the website: keep the deployment to the app and its public assets.
+docs/
+scripts/
+AGENTS.md
+README.md
+.env*
+!.env.example
