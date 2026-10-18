@@ -1,15 +1,18 @@
-import { Raleway, Spectral } from 'next/font/google';
+import { Raleway } from 'next/font/google';
+import localFont from 'next/font/local';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import { site } from '@/lib/content';
 import './globals.css';
 
-// The only two font families on the site (09 §6): Spectral for headings,
-// Raleway for body text and all UI. Self-hosted at build time by next/font.
-const spectral = Spectral({
-  variable: '--font-spectral',
-  subsets: ['latin'],
-  weight: ['400', '500'],
+// The only two font families on the site (09 §6). Samarkan, the logo's
+// typeface, for page titles and section headings; Raleway for everything
+// else. Samarkan is shareware: the original file is served unaltered with its
+// README (app/fonts/samarkan/) and needs registering with the foundry.
+const samarkan = localFont({
+  src: './fonts/samarkan/Samarkan.ttf',
+  variable: '--font-samarkan',
+  weight: '400',
   display: 'swap',
 });
 
@@ -41,7 +44,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${spectral.variable} ${raleway.variable}`}>
+    <html lang="en" className={`${samarkan.variable} ${raleway.variable}`}>
       <body>
         <a href="#main" className="skip-link">
           Skip to content
