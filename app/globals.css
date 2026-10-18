@@ -1,5 +1,5 @@
 /* Ubud Chakra Healing — design tokens and global styles.
-   Two families only: Samarkan (page titles, section headings) and Raleway (everything else). */
+   Two families only: Arimo (page titles, section headings) and Raleway (everything else). */
 
 :root {
   /* Colour */
@@ -17,9 +17,9 @@
   --on-dark: #f3eefa;
   --on-dark-muted: #c9c0d9;
 
-  /* Type: Samarkan (the logo's typeface) for page titles and section
-     headings only; Raleway for everything else. */
-  --font-heading: var(--font-samarkan), Georgia, serif;
+  /* Type: Arimo (Arial-compatible, as in the logo's tagline) for page titles
+     and section headings only; Raleway for everything else. */
+  --font-heading: var(--font-arimo), Arial, sans-serif;
   --font-body: var(--font-raleway), system-ui, sans-serif;
   --step--1: 0.875rem;
   --step-0: clamp(1rem, 0.96rem + 0.18vw, 1.0625rem);
@@ -93,8 +93,8 @@ h1,
 h2 {
   font-family: var(--font-heading);
   font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
 }
 
 h3 {
