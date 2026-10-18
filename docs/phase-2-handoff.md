@@ -1,6 +1,11 @@
 # Phase 2 hand-off
 
-**Built:** 2026-10-17 · **Stack:** Next.js 16.4 (App Router, JavaScript, Cache Components), React 19.3, GSAP 3 + ScrollTrigger, plain CSS. **Status:** local only. Nothing has been pushed or deployed.
+**Built:** 2026-10-17 · **Stack:** Next.js 16.4 (App Router, JavaScript, Cache Components), React 19.3, GSAP 3 + ScrollTrigger, plain CSS. **Status:** deployed.
+
+- **Live site:** https://ubudchakrahealing.vercel.app (Vercel project `ubudchakrahealing`, public production deployment)
+- **Source:** https://github.com/harini305/ubudchakrahealing (branch `main`). Every push to `main` deploys to production automatically.
+- **Deployment contents:** only the app and `public/` assets. `.vercelignore` excludes `docs/` (audit, screenshots, original assets), `scripts/` and the READMEs.
+- **Images:** 59 optimised files (3.0 MB): WebP at 480–1600 px (hero 1920 px) plus one JPEG fallback each. The unused 64 MB video is neither versioned nor deployed.
 
 ## What was built
 
