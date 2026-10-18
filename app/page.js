@@ -37,32 +37,30 @@ export default function HomePage() {
       </section>
 
       <section className="section section--wash" aria-labelledby="healer-heading">
-        <div className="container">
-          <div className="split split--portrait">
-            <Picture
-              name="healer-portrait"
-              alt="Mr. Ketut stands with eyes closed and hands raised in front of a mandala painting"
-              sizes="(min-width: 900px) 35vw, 100vw"
-              className="split__media split__media--portrait"
-            />
-            <div className="prose">
-              <h2 id="healer-heading">The healer</h2>
-              <p>
-                Mr. Ketut learned chakra balancing from a Japanese teacher. A retired civil servant, he now devotes his
-                time to serving others: giving positive energy and spreading love.
-              </p>
-              <p>Sessions take place on Monkey Forest Street in the centre of Ubud, across from the football field.</p>
-              <div className="actions">
-                <Link href="/about-us" className="text-link">
-                  More about Mr. Ketut
-                </Link>
-              </div>
+        <div className="container healer-mosaic">
+          <div className="healer-mosaic__text">
+            <h2 id="healer-heading">The healer</h2>
+            <p style={{ marginTop: 'var(--space-s)' }}>
+              Mr. Ketut learned chakra balancing from a Japanese teacher. A retired civil servant, he now devotes his
+              time to serving others: giving positive energy and spreading love.
+            </p>
+            <p>Sessions take place on Monkey Forest Street in the centre of Ubud, across from the football field.</p>
+            <div className="actions">
+              <Link href="/about-us" className="text-link">
+                More about Mr. Ketut
+              </Link>
             </div>
           </div>
+          <Picture
+            name="healer-portrait"
+            alt="Mr. Ketut stands with eyes closed and hands raised in front of a mandala painting"
+            sizes="(min-width: 1000px) 27vw, 100vw"
+            className="healer-mosaic__portrait"
+          />
           <ul className="gallery" aria-label="Photographs from healing sessions">
             {gallery.map((g) => (
               <li key={g.name}>
-                <Picture name={g.name} alt={g.alt} sizes="(min-width: 900px) 25vw, 50vw" />
+                <Picture name={g.name} alt={g.alt} sizes="(min-width: 1000px) 20vw, 50vw" />
               </li>
             ))}
           </ul>
@@ -70,8 +68,8 @@ export default function HomePage() {
       </section>
 
       <section className="section" aria-labelledby="chakra-heading">
-        <div className="container chakra-intro chakra-intro--teaser">
-          <div className="prose">
+        <div className="container chakra-teaser">
+          <div>
             <h2 id="chakra-heading">Wheels of energy</h2>
             <p className="lede" style={{ marginTop: 'var(--space-s)' }}>
               The Sanskrit word chakra translates to wheel or disk. There are seven main chakras, which align the spine,
@@ -83,7 +81,7 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <ChakraSpine compact />
+          <ChakraSpine variant="row" label="The seven main chakras, from the root to the crown" />
         </div>
       </section>
 

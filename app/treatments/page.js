@@ -12,7 +12,7 @@ export const metadata = {
 export default function TreatmentsPage() {
   return (
     <>
-      <div className="container page-head">
+      <div className="container page-head page-head--row">
         <h1>Treatments</h1>
         <p>Relaxation and rejuvenation on the Island of the Gods.</p>
       </div>

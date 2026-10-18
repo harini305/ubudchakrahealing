@@ -12,14 +12,11 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
-      <div className="container page-head">
-        <h1>Contact</h1>
-        <p>Call, email or send a message below to ask about a session.</p>
-      </div>
-
-      <section className="section">
+      <section className="section" style={{ paddingTop: 'var(--space-xl)' }}>
         <div className="container contact-layout">
-          <div>
+          <div className="contact-layout__info">
+            <h1>Contact</h1>
+            <p className="contact-layout__intro">Call, email or send a message to ask about a session.</p>
             <dl className="contact-list">
               <div>
                 <dt>Phone</dt>
@@ -46,8 +43,8 @@ export default function ContactPage() {
             <MapEmbed />
           </div>
 
-          <div>
-            <h2 style={{ fontSize: 'var(--step-2)', marginBottom: 'var(--space-m)' }}>Send a message</h2>
+          <div className="form-card">
+            <h2>Send a message</h2>
             <ContactForm />
           </div>
         </div>

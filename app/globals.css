@@ -37,9 +37,9 @@
   --space-2xl: clamp(3rem, 2.3rem + 3vw, 5rem);
 
   /* Layout (one container system) */
-  --container: 72rem;
-  --gutter: clamp(1rem, 0.6rem + 2vw, 2.5rem);
-  --measure: 38rem;
+  --container: 120rem;
+  --gutter: clamp(1rem, 0.4rem + 2.6vw, 3rem);
+  --measure: 44rem;
   --header-h: 4.5rem;
   --radius: 2px;
 }
@@ -462,6 +462,24 @@ a:hover {
   color: var(--ink-muted);
 }
 
+.page-head--row {
+  display: grid;
+  gap: var(--space-s) var(--space-xl);
+}
+
+@media (min-width: 900px) {
+  .page-head--row {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: end;
+  }
+
+  .page-head--row p {
+    margin-top: 0;
+    justify-self: end;
+    max-width: 36rem;
+  }
+}
+
 /* The first section after a page heading starts close to it. */
 .page-head + .section {
   padding-top: var(--space-l);
@@ -507,59 +525,16 @@ a:hover {
   aspect-ratio: 3 / 2;
 }
 
+.split .prose {
+  max-width: 46rem;
+}
+
 .split h2 {
   margin-top: 0;
   margin-bottom: var(--space-s);
 }
 
 /* ---------- Chakra spine ---------- */
-
-.chakra-intro {
-  display: grid;
-  gap: var(--space-l);
-}
-
-@media (min-width: 900px) {
-  .chakra-intro {
-    grid-template-columns: minmax(0, 1fr) minmax(17rem, 22rem);
-    gap: var(--space-xl);
-    align-items: start;
-  }
-
-  /* Home teaser: the compact spine leads, beside the text. */
-  .chakra-intro--teaser {
-    grid-template-columns: auto minmax(0, 1fr);
-    gap: var(--space-xl);
-    align-items: center;
-  }
-
-  .chakra-intro--teaser .spine {
-    order: -1;
-  }
-}
-
-@media (max-width: 899px) {
-  .chakra-intro--teaser .spine {
-    display: none;
-  }
-}
-
-.spine-panel {
-  padding: var(--space-l);
-  background: var(--teak-wash);
-}
-
-@media (min-width: 900px) {
-  .spine-panel {
-    position: sticky;
-    top: calc(var(--header-h) + var(--space-m));
-  }
-}
-
-.spine-panel h2 {
-  margin-bottom: var(--space-m);
-  font-size: var(--step-1);
-}
 
 .spine {
   --dot: 1.125rem;
@@ -627,18 +602,7 @@ a:hover {
   color: var(--ink-muted);
 }
 
-.spine--compact {
-  --dot: 0.875rem;
-  --spine-gap: 1.25rem;
-}
-
-.spine--compact {
-  --dot-offset: 0px;
-  --item-h: var(--dot);
-}
-
-.section--wash .spine__dot,
-.spine-panel .spine__dot {
+.section--wash .spine__dot {
   box-shadow: 0 0 0 4px var(--teak-wash);
 }
 
@@ -789,19 +753,23 @@ a:hover {
 /* Treatment detail: heading and body on the left, images on the right. */
 .detail {
   display: grid;
-  grid-template-areas: 'head' 'media' 'body' 'gallery';
+  grid-template-areas: 'head' 'media' 'body';
   gap: var(--space-l);
   padding-block: var(--space-xl) var(--space-2xl);
 }
 
 .detail__head { grid-area: head; }
-.detail__media { grid-area: media; }
-.detail__body { grid-area: body; }
+.detail__media { grid-area: media; display: grid; gap: var(--space-s); }
+.detail__body { grid-area: body; max-width: none; }
 
 .detail__gallery {
-  grid-area: gallery;
   display: grid;
-  gap: var(--space-m);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-s);
+}
+
+.detail__gallery--single {
+  grid-template-columns: 1fr;
 }
 
 .detail__head nav {
@@ -819,11 +787,10 @@ a:hover {
 @media (min-width: 900px) {
   .detail {
     grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
       'head media'
-      'body media'
-      'body gallery';
+      'body media';
     column-gap: var(--space-xl);
     row-gap: var(--space-m);
     align-items: start;
@@ -1290,5 +1257,199 @@ a:hover {
 @media (max-width: 899px) {
   .chakra-card picture {
     display: none;
+  }
+}
+
+/* ---------- Horizontal chakra row (home teaser) ---------- */
+
+.chakra-row {
+  --dot: 1rem;
+  position: relative;
+}
+
+.chakra-row__track {
+  position: absolute;
+  top: calc(var(--dot) / 2 - 1px);
+  left: calc(100% / 14);
+  right: calc(100% / 14);
+  height: 2px;
+  background: var(--line);
+}
+
+.chakra-row__fill {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #c8322b, #e07425, #e3b12a, #4c9a57, #3c93c4, #3c4fa6, #7b4faa);
+  transform-origin: left;
+}
+
+.chakra-row ol {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: var(--space-2xs);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.chakra-row li {
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  gap: var(--space-xs);
+}
+
+.chakra-row .spine__dot {
+  margin-top: 0;
+}
+
+.chakra-row .spine__name {
+  font-size: var(--step-0);
+  line-height: 1.25;
+}
+
+.chakra-row .spine__meaning {
+  margin-top: 0.25rem;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+.chakra-teaser {
+  display: grid;
+  gap: var(--space-l) var(--space-xl);
+  align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .chakra-teaser {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  }
+}
+
+@media (max-width: 699px) {
+  .chakra-row {
+    display: none;
+  }
+}
+
+/* ---------- Contact page: heading inside the left column ---------- */
+
+.contact-layout h1 {
+  margin-bottom: var(--space-s);
+}
+
+.contact-layout__intro {
+  margin-bottom: var(--space-l);
+  font-size: var(--step-1);
+  color: var(--ink-muted);
+}
+
+.form-card {
+  align-self: start;
+  padding: var(--space-l);
+  background: var(--teak-wash);
+}
+
+.form-card h2 {
+  margin-bottom: var(--space-m);
+  font-size: var(--step-2);
+}
+
+.detail--solo .detail__media img {
+  aspect-ratio: auto;
+}
+
+@media (min-width: 900px) and (min-height: 760px) {
+  .detail__media {
+    position: sticky;
+    top: calc(var(--header-h) + var(--space-m));
+  }
+}
+
+/* ---------- Home: healer mosaic (text | portrait | 2x2 photos) ---------- */
+
+.healer-mosaic {
+  display: grid;
+  gap: var(--space-m);
+}
+
+.healer-mosaic .gallery {
+  margin: 0;
+}
+
+.healer-mosaic .gallery img {
+  aspect-ratio: 1 / 1;
+}
+
+.healer-mosaic__portrait img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+@media (min-width: 1000px) {
+  .healer-mosaic {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 4fr) minmax(0, 6fr);
+    align-items: stretch;
+    gap: var(--space-m);
+  }
+
+  .healer-mosaic__text {
+    align-self: center;
+    padding-right: var(--space-m);
+  }
+
+  .healer-mosaic__portrait,
+  .healer-mosaic__portrait img {
+    height: 100%;
+  }
+
+  .healer-mosaic__portrait img {
+    aspect-ratio: auto;
+  }
+
+  .healer-mosaic .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-m);
+  }
+}
+
+/* ---------- Contact: equal-height columns, map fills the rest ---------- */
+
+@media (min-width: 960px) {
+  .contact-layout {
+    align-items: stretch;
+  }
+
+  .contact-layout__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-layout__info .map {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .contact-layout__info .map iframe {
+    flex: 1;
+    min-height: 240px;
+    aspect-ratio: auto;
+  }
+
+  .form-card {
+    align-self: stretch;
+  }
+}
+
+/* ---------- About: square portrait balances the text column ---------- */
+
+@media (min-width: 900px) {
+  .portrait img {
+    aspect-ratio: 1 / 1;
+    object-position: 50% 15%;
   }
 }

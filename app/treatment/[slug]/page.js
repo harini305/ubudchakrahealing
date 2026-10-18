@@ -33,7 +33,7 @@ export default async function TreatmentPage({ params }) {
 
   return (
     <>
-      <article className="container detail">
+      <article className={gallery.length ? 'container detail' : 'container detail detail--solo'}>
         <div className="detail__head">
           <nav aria-label="Breadcrumb">
             <Link href="/treatments">All treatments</Link>
@@ -51,13 +51,21 @@ export default async function TreatmentPage({ params }) {
           )}
         </div>
 
-        <Picture
-          name={t.image}
-          alt={t.imageAlt}
-          sizes="(min-width: 900px) 42vw, 100vw"
-          className="detail__media"
-          priority
-        />
+        <div className="detail__media">
+          <Picture name={t.image} alt={t.imageAlt} sizes="(min-width: 900px) 42vw, 100vw" priority />
+          {gallery.length > 0 && (
+            <div className={gallery.length > 1 ? 'detail__gallery' : 'detail__gallery detail__gallery--single'}>
+              {gallery.map((g) => (
+                <Picture
+                  key={g.name}
+                  name={g.name}
+                  alt={g.alt}
+                  sizes={gallery.length > 1 ? '(min-width: 900px) 21vw, 50vw' : '(min-width: 900px) 42vw, 100vw'}
+                />
+              ))}
+            </div>
+          )}
+        </div>
 
         <div className="detail__body prose">
           <Body />
@@ -67,14 +75,6 @@ export default async function TreatmentPage({ params }) {
             </Link>
           </div>
         </div>
-
-        {gallery.length > 0 && (
-          <div className="detail__gallery">
-            {gallery.map((g) => (
-              <Picture key={g.name} name={g.name} alt={g.alt} sizes="(min-width: 900px) 42vw, 100vw" />
-            ))}
-          </div>
-        )}
       </article>
 
       <ContactBand />
